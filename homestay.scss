@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url(fonts/lato-hairline.ttf)
+}
+
+@font-face {
+  font-family: 'Trendsetter Alt';
+  src: url("fonts/trendsetter Alt.ttf")
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src: url(fonts/lato-light.ttf);
+}
+
+@font-face {
+  font-family: "FS Playlist Caps";
+  src: url("fonts/FS Playlist Caps.ttf");
+}
+
+@font-face {
+  font-family: "FS Playlist Script";
+  src: url("fonts/FS Playlist Script.ttf");
+}
+
+#fp-nav > ul > li {
+  height: 31px;
+
+  a, a:hover {
+    span {
+      background: rgba(255, 255, 255, 0.5);
+      width: 15px;
+      height: 15px;
+      margin: 0;
+    }
+
+    &.active span {
+      background: #FFFFFF;
+      width: 15px;
+      height: 15px;
+      margin: 0;
+    }
+  }
+
+  a:hover {
+    span {
+      background: #FFFFFF;
+    }
+  }
+}
+
+.fp-slidesNav.bottom {
+  bottom: 0;
+
+  span {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .active span {
+    background: #FFFFFF;
+  }
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.double-image {
+  object-fit: cover;
+  width: 50%;
+  height: calc(100vh - 250px);
+}
+
+.section-1 {
+  .title-bar {
+    position: absolute;
+    border: 3px solid white;
+    bottom: 70px;
+    right: 80px;
+    height: 200px;
+    width: 700px;
+    z-index: 2;
+
+    .subtitle {
+      font-family: "Lato Hairline";
+      color: #FFFFFF;
+      font-size: 25px;
+      position: absolute;
+      left: 130px;
+      top: 30px;
+    }
+
+    .title {
+      color: #FFFFFF;
+      font-family: "Trendsetter Alt";
+      font-size: 150px;
+      text-shadow: -5px 5px rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: -10px;
+      left: 70px
+    }
+
+    .author {
+      color: #FFFFFF;
+      font-family: "Lato Light";
+      font-size: 50px;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+  }
+
+  .title-bar-background {
+    height: 200px;
+    width: 500px;
+    background: rgba(19, 113, 115, 0.4);
+    position: absolute;
+    right: 300px;
+    bottom: 90px;
+    z-index: 1;
+  }
+
+}
+
+.section-3 {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background: rgba(65, 64, 66, 0.75);
+    .title-bar {
+      position: absolute;
+      z-index: 1;
+      bottom: 40px;
+      left: 50px;
+      border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 25px;
+      padding-right: 50px;
+      .title-1 {
+        font-family: "FS Playlist Script";
+        font-size: 50px;
+        color: #FFFFFF;
+      }
+
+      .title-2 {
+        font-family: "FS Playlist Caps";
+        font-size: 70px;
+        color: #F7941D;
+        line-height: 60px;
+      }
+    }
+    .content {
+      bottom: 40px;
+      right: 89px;
+      left: 379px;
+      position: absolute;
+      height: 167px;
+      background: rgba(255, 255, 255, 0.15);
+      font-family: "Lato Light";
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 40px;
+      padding: 15px;
+    }
+  }
+
+}
+
+.section-4 {
+  .content-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    .title-bar {
+      position: absolute;
+      z-index: 1;
+      bottom: 40px;
+      left: 50px;
+      border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 25px;
+      padding-right: 50px;
+      .title-1 {
+        font-family: "FS Playlist Script";
+        font-size: 50px;
+        color: #FFFFFF;
+      }
+
+      .title-2 {
+        font-family: "FS Playlist Caps";
+        font-size: 70px;
+        color: #F7941D;
+        line-height: 60px;
+      }
+    }
+    .content {
+      bottom: 40px;
+      right: 89px;
+      left: 379px;
+      position: absolute;
+      height: 167px;
+      background: rgba(255, 255, 255, 0.15);
+      font-family: "Lato Light";
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 40px;
+      padding: 15px;
+    }
+  }
+
+}
+
+.section-5 {
+
+  .fp-slidesNav.bottom {
+    bottom: 251px;
+  }
+
+  .slide {
+    position: relative;
+    .images {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 250px);
+      display: flex;
+      .image-crop {
+        flex: 1;
+        background: red;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+  .content-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 250px;
+    background: url("images/6 Cam nhan ve homestay/Asset 1.png") repeat-x;
+    background-size: cover;
+    width: 100%;
+
+    .title-bar {
+      position: absolute;
+      z-index: 1;
+      bottom: 40px;
+      left: 50px;
+      border-bottom: 10px solid #F7941D;
+      padding-bottom: 25px;
+      padding-right: 50px;
+      .title-1 {
+        font-family: "FS Playlist Script";
+        font-size: 50px;
+        color: #414042;
+      }
+
+      .title-2 {
+        font-family: "FS Playlist Caps";
+        font-size: 70px;
+        color: #F7941D;
+        line-height: 60px;
+      }
+    }
+    .content {
+      bottom: 10px;
+      right: 89px;
+      left: 440px;
+      position: absolute;
+      height: 230px;
+      font-family: "Lato Light";
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 40px;
+      padding: 15px;
+      border-left: 2px solid #D1D3D4;
+      margin-top: 20px;
+
+      .prev-arrow {
+        position: absolute;
+      }
+
+      .next-arrow {
+        position: absolute;
+      }
+    }
+  }
+
+}
