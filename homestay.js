@@ -128,7 +128,7 @@ $(document).ready(function () {
                 case 1: {
                     $('#title-bar').animate({
                         left: '-600px'
-                    }, 500)
+                    }, 1000)
                     break;
                 }
             }
@@ -144,7 +144,7 @@ $(document).ready(function () {
                 case 1: {
                     $('#title-bar').animate({
                         left: '0'
-                    }, 500)
+                    }, 1000)
                     break;
                 }
             }
@@ -165,7 +165,7 @@ $(document).ready(function () {
 
     $('#title-bar').animate({
         left: '0px'
-    }, 500)
+    }, 1000)
 
     animateLamps();
 

@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14ed65e-082b-47cf-97d3-a4b4940507c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4 Khong gian ben ngoai/Gach trang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/6 Cam nhan ve homestay/Gach cam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Bìa home page.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Youtube.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/8 Map/MAP.JPG" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book.css" afterPath="$PROJECT_DIR$/book.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book.html" afterPath="$PROJECT_DIR$/book.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book.scss" afterPath="$PROJECT_DIR$/book.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.css" afterPath="$PROJECT_DIR$/homestay.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.css.map" afterPath="$PROJECT_DIR$/homestay.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.html" afterPath="$PROJECT_DIR$/homestay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.js" afterPath="$PROJECT_DIR$/homestay.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.scss" afterPath="$PROJECT_DIR$/homestay.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.scss" afterPath="$PROJECT_DIR$/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prepros-6.config" afterPath="$PROJECT_DIR$/prepros-6.config" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,8 +44,8 @@
       <file leaf-file-name="homestay.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homestay.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="368" column="21" lean-forward="false" selection-start-line="368" selection-start-column="21" selection-end-line="368" selection-end-column="21" />
+            <state relative-caret-position="172">
+              <caret line="639" column="24" lean-forward="false" selection-start-line="639" selection-start-column="24" selection-end-line="639" selection-end-column="24" />
               <folding>
                 <element signature="e#623#1774#0" expanded="false" />
                 <element signature="e#1193#1252#0" expanded="false" />
@@ -75,7 +59,6 @@
                 <element signature="e#5851#6902#0" expanded="false" />
                 <element signature="e#9220#9346#0" expanded="false" />
                 <element signature="e#9379#10545#0" expanded="false" />
-                <element signature="e#10560#13193#0" expanded="false" />
                 <element signature="e#10654#11467#0" expanded="false" />
                 <element signature="e#11614#12113#0" expanded="false" />
                 <element signature="e#12132#12491#0" expanded="false" />
@@ -154,11 +137,11 @@
       <file leaf-file-name="homestay.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homestay.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="218" column="18" lean-forward="false" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+            <state relative-caret-position="-30">
+              <caret line="146" column="27" lean-forward="false" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#7062#7244#0" expanded="false" />
+                <element signature="e#7065#7247#0" expanded="false" />
                 <element signature="n#!!block;n#nextGalleryImage#0" expanded="false" />
                 <element signature="n#!!block;n#prevGalleryImage#0" expanded="false" />
                 <element signature="n#!!block;n#nextFeedback#0" expanded="false" />
@@ -202,7 +185,6 @@
       <find>descr</find>
       <find>next-arrow</find>
       <find>title-bar</find>
-      <find>section-5</find>
       <find>feedback</find>
       <find>section-4</find>
       <find>section-3</find>
@@ -210,6 +192,7 @@
       <find>next</find>
       <find>lamps</find>
       <find>section</find>
+      <find>section-5</find>
       <find>animate</find>
     </findStrings>
     <replaceStrings>
@@ -442,12 +425,12 @@
       <updated>1497627177618</updated>
       <workItem from="1497627179112" duration="2803000" />
       <workItem from="1497665294201" duration="44985000" />
-      <workItem from="1497760024096" duration="17023000" />
+      <workItem from="1497760024096" duration="17942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64811000" />
+    <option name="totallyTimeSpent" value="65730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -707,14 +690,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -753,13 +728,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homestay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="218" column="18" lean-forward="false" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+        <state relative-caret-position="-30">
+          <caret line="146" column="27" lean-forward="false" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#7062#7244#0" expanded="false" />
+            <element signature="e#7065#7247#0" expanded="false" />
             <element signature="n#!!block;n#nextGalleryImage#0" expanded="false" />
             <element signature="n#!!block;n#prevGalleryImage#0" expanded="false" />
             <element signature="n#!!block;n#nextFeedback#0" expanded="false" />
@@ -770,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homestay.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="368" column="21" lean-forward="false" selection-start-line="368" selection-start-column="21" selection-end-line="368" selection-end-column="21" />
+        <state relative-caret-position="172">
+          <caret line="639" column="24" lean-forward="false" selection-start-line="639" selection-start-column="24" selection-end-line="639" selection-end-column="24" />
           <folding>
             <element signature="e#623#1774#0" expanded="false" />
             <element signature="e#1193#1252#0" expanded="false" />
@@ -785,7 +768,6 @@
             <element signature="e#5851#6902#0" expanded="false" />
             <element signature="e#9220#9346#0" expanded="false" />
             <element signature="e#9379#10545#0" expanded="false" />
-            <element signature="e#10560#13193#0" expanded="false" />
             <element signature="e#10654#11467#0" expanded="false" />
             <element signature="e#11614#12113#0" expanded="false" />
             <element signature="e#12132#12491#0" expanded="false" />
