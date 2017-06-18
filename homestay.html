@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="lib/jquery.fullpage.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/lightslider.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="homestay.css">
+
 
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
             integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
@@ -20,10 +26,24 @@
     <script type="text/javascript" src="lib/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="lib/jquery.fullpage.min.js"></script>
     <script type="text/javascript" src="lib/jquery.fullpage.extensions.min.js"></script>
+    <script async src="http://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/lightslider.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="homestay.js"></script>
 </head>
 <body>
 
+<div class="navigation-bar">
+    <img class="logo" src="images/logo.png"/>
+    <div class="search-box">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <i class="icon-magnifier"></i>
+    </div>
+    <a class="link">CONTACT</a>
+    <a class="link">ABOUT US</a>
+    <a class="link">BLOG</a>
+    <a class="link">HOMESTAY</a>
+</div>
 <div id="fullpage">
     <div class="section section-1">
         <div class="slide">
@@ -55,8 +75,26 @@
         </div>
         <div class="title-bar-background">
         </div>
+
+        <div class="buttons">
+            <img class="button" src="images/book.png"/>
+            <br/>
+            <img class="button" src="images/phone.png"/>
+            <br/>
+            <img class="button" src="images/facebook.png"/>
+        </div>
     </div>
-    <div class="section section-2"></div>
+    <div class="section section-2">
+        <img class="logo-360" src="images/3%20Video%20360/Asset%207.png"/>
+        <a class="flickr-360"
+           data-flickr-embed="true"
+           data-context="true"
+           data-vr="true"
+           href="https://www.flickr.com/photos/151753243@N05/35194497342/in/dateposted-public/" title="R0011099"><img
+                src="https://c1.staticflickr.com/5/4275/35194497342_10304b959c_k.jpg"
+                alt="R0011099"></a>
+
+    </div>
     <div class="section section-3">
         <div class="slide">
             <img class="image" src="images/4 Khong gian ben ngoai/IMG_7599.JPG"/>
@@ -145,9 +183,153 @@
             </div>
             <div class="content">
                 <img src="images/6 Cam nhan ve homestay/Asset 2.png" class="prev-arrow" onclick="prevFeedback()"/>
-                <img src="images/6 Cam nhan ve homestay/Asset 3.png" class="next-arrow" onclick="nextFeedBack()"/>
+                <img src="images/6 Cam nhan ve homestay/Asset 3.png" class="next-arrow" onclick="nextFeedback()"/>
+                <div class="author-role">
+                    <p class="author" id="author">Tâm Phạm</p>
+                    <p class="role" id="role">Khách hàng</p>
+                </div>
+                <p class="feedback" id="feedback">
+                    Ấm - cả nghĩa đen và nghĩa bóng là những gì mình nghĩ về Tổ. Mình vẫn nhớ như in ngày lạnh ấy, Tổ
+                    đón mình với ánh đèn vàng ấm và hương tinh dầu dịu dàng đến mềm lòng, ấm áp như vừa nhận một cái ôm.
+                </p>
             </div>
         </div>
+    </div>
+    <div class="section section-6" id="section-6">
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (1).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (2).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (3).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (4).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (5).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (6).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (7).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (8).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (9).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (10).JPG"/>
+        </div>
+        <div class="slide">
+            <img class="image" src="images/7 Gallery/BST (11).JPG"/>
+        </div>
+
+        <div class="header-container">
+            <div class="header">Gallery</div>
+        </div>
+
+        <div class="footer">
+            <div id="slider-container">
+                <ul id="lightSlider">
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (1).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (2).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (3).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (4).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (5).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (6).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (7).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (8).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (9).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (10).JPG"/>
+                    </li>
+                    <li>
+                        <img class="galleryImage" src="images/7 Gallery/BST (11).JPG"/>
+                    </li>
+                </ul>
+            </div>
+            <img src="images/6 Cam nhan ve homestay/Asset 2.png" class="prev-arrow" onclick="prevGalleryImage()"/>
+            <img src="images/6 Cam nhan ve homestay/Asset 3.png" class="next-arrow" onclick="nextGalleryImage()"/>
+        </div>
+    </div>
+    <div class="section section-7">
+        <div class="content">
+            <div class="address-container">
+                <iframe id="googlemap"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPc8Yui0ChCFIDqnmUQS5DUYtA-KuCxfA
+    &q=Lacaito+-+The May" allowfullscreen>
+                </iframe>
+                <div class="info">
+                    <p class="place-name">Lacaito by D.A.N.G</p>
+                    <p class="address">Địa chỉ: Số 02, Ngõ Dã Tượng, Dã Tượng, Hai Bà Trưng, Hà Nội</p>
+                    <p class="phone">Điện thoại: 0967131997</p>
+                    <p class="email">Email: lacaito@gmail.com</p>
+                </div>
+            </div>
+            <div class="booking-container">
+                <div class="title-container">
+                    <div class="title">Booking</div>
+                    <div class="subtitle">Đặt phòng tại <span class="place-name">Lacatio</span></div>
+                </div>
+
+                <div class="options row">
+                    <div class="col-md-6 option">
+                        CHECKIN
+                        <br/>
+                        <input class="form-control" type="date">
+                    </div>
+                    <div class="col-md-6 option">
+                        CHECKOUT
+                        <br/>
+                        <input class="form-control" type="date">
+                    </div>
+                    <div class="col-md-6 option">
+                        SỐ NGƯỜI
+                        <br/>
+                        <input class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="buttons row">
+                    <div class="col-md-6 button-container">
+                        <a class="button red">BOOK</a>
+                        <br/>
+                        <p class="note">* Dành cho khách đặt ít hơn 03 ngày</p>
+                    </div>
+                    <div class="col-md-6 button-container">
+                        <a class="button blue">Thương lượng</a>
+                        <p class="note">* Dành cho khách đặt nhiều hơn 03 ngày</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">&#169; 2017. Bản quyền thuộc về EAGLES CORP. Được phát triển bởi EAGLES</div>
+
     </div>
 </div>
 

@@ -23,6 +23,67 @@
   src: url("fonts/FS Playlist Script.ttf");
 }
 
+@font-face {
+  font-family: "Lato Regular";
+  src: url("fonts/lato-regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Thin";
+  src: url("fonts/lato-thin.ttf");
+}
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  z-index: 100;
+
+  background: #FAAF40; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #673E15, #FAAF40); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #673E15, #FAAF40); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #673E15, #FAAF40); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #673E15, #FAAF40); /* Standard syntax */
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+  }
+
+  .search-box {
+    float: right;
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    margin-right: 20px;
+
+    input {
+      border-radius: 10px 0 0 10px;
+      height: 30px;
+      border: none;
+      background: rgba(255, 255, 255, 0.75);
+      padding-right: 26px;
+    }
+    i {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
+  .link {
+    float: right;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: white !important;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+}
+
 #fp-nav > ul > li {
   height: 31px;
 
@@ -61,240 +122,498 @@
   }
 }
 
-.image {
-  object-fit: cover;
-  width: 100%;
-  height: 100vh;
-}
+#fullpage {
 
-.double-image {
-  object-fit: cover;
-  width: 50%;
-  height: calc(100vh - 250px);
-}
-
-.section-1 {
-  .title-bar {
-    position: absolute;
-    border: 3px solid white;
-    bottom: 70px;
-    right: 80px;
-    height: 200px;
-    width: 700px;
-    z-index: 2;
-
-    .subtitle {
-      font-family: "Lato Hairline";
-      color: #FFFFFF;
-      font-size: 25px;
-      position: absolute;
-      left: 130px;
-      top: 30px;
-    }
-
-    .title {
-      color: #FFFFFF;
-      font-family: "Trendsetter Alt";
-      font-size: 150px;
-      text-shadow: -5px 5px rgba(0, 0, 0, 0.7);
-      position: absolute;
-      top: -10px;
-      left: 70px
-    }
-
-    .author {
-      color: #FFFFFF;
-      font-family: "Lato Light";
-      font-size: 50px;
-      position: absolute;
-      bottom: 20px;
-      right: 40px;
-    }
+  .section {
+    background: #313032;
   }
 
-  .title-bar-background {
-    height: 200px;
-    width: 500px;
-    background: rgba(19, 113, 115, 0.4);
-    position: absolute;
-    right: 300px;
-    bottom: 90px;
-    z-index: 1;
-  }
-
-}
-
-.section-3 {
-  .overlay {
-    height: 100%;
+  .image {
+    object-fit: cover;
     width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-    background: rgba(65, 64, 66, 0.75);
+    height: 100%;
+  }
+
+  .double-image {
+    object-fit: cover;
+    width: 50%;
+    height: calc(100vh - 300px);
+  }
+
+  .section-1 {
+
+    .buttons {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      height: 400px;
+      width: 200px;
+      margin: auto;
+      text-align: center;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .button {
+        cursor: pointer;
+      }
+    }
+
     .title-bar {
       position: absolute;
-      z-index: 1;
-      bottom: 40px;
-      left: 50px;
-      border-bottom: 10px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 25px;
-      padding-right: 50px;
-      .title-1 {
-        font-family: "FS Playlist Script";
-        font-size: 50px;
+      border: 3px solid white;
+      bottom: 70px;
+      right: 80px;
+      height: 200px;
+      width: 700px;
+      z-index: 2;
+      .subtitle {
+        font-family: "Lato Hairline";
         color: #FFFFFF;
+        font-size: 25px;
+        position: absolute;
+        left: 130px;
+        top: 30px;
       }
 
-      .title-2 {
-        font-family: "FS Playlist Caps";
-        font-size: 70px;
-        color: #F7941D;
-        line-height: 60px;
-      }
-    }
-    .content {
-      bottom: 40px;
-      right: 89px;
-      left: 379px;
-      position: absolute;
-      height: 167px;
-      background: rgba(255, 255, 255, 0.15);
-      font-family: "Lato Light";
-      color: #FFFFFF;
-      font-size: 20px;
-      line-height: 40px;
-      padding: 15px;
-    }
-  }
-
-}
-
-.section-4 {
-  .content-container {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-    .title-bar {
-      position: absolute;
-      z-index: 1;
-      bottom: 40px;
-      left: 50px;
-      border-bottom: 10px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 25px;
-      padding-right: 50px;
-      .title-1 {
-        font-family: "FS Playlist Script";
-        font-size: 50px;
+      .title {
         color: #FFFFFF;
+        font-family: "Trendsetter Alt";
+        font-size: 150px;
+        text-shadow: -5px 5px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: -10px;
+        left: 70px
       }
 
-      .title-2 {
-        font-family: "FS Playlist Caps";
-        font-size: 70px;
-        color: #F7941D;
-        line-height: 60px;
+      .author {
+        color: #FFFFFF;
+        font-family: "Lato Light";
+        font-size: 50px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
       }
     }
-    .content {
-      bottom: 40px;
-      right: 89px;
-      left: 379px;
+
+    .title-bar-background {
+      height: 200px;
+      width: 500px;
+      background: rgba(19, 113, 115, 0.4);
       position: absolute;
-      height: 167px;
-      background: rgba(255, 255, 255, 0.15);
-      font-family: "Lato Light";
-      color: #FFFFFF;
-      font-size: 20px;
-      line-height: 40px;
-      padding: 15px;
+      right: 300px;
+      bottom: 90px;
+      z-index: 1;
+    }
+
+  }
+
+  .section-2 {
+    .flickr-embed-frame {
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    .flickr-embed-header {
+      display: none;
+    }
+
+    .logo-360 {
+      position: absolute;
+      top: 100px;
+      right: 100px;
     }
   }
 
-}
-
-.section-5 {
-
-  .fp-slidesNav.bottom {
-    bottom: 251px;
-  }
-
-  .slide {
-    position: relative;
-    .images {
-      position: absolute;
+  .section-3 {
+    .overlay {
+      height: 100%;
+      width: 100%;
       top: 0;
       left: 0;
-      width: 100%;
-      height: calc(100% - 250px);
-      display: flex;
-      .image-crop {
-        flex: 1;
-        background: red;
-        position: relative;
-        overflow: hidden;
-        object-fit: cover;
+      position: absolute;
+      z-index: 1;
+      background: rgba(65, 64, 66, 0.75);
+      .title-bar {
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        left: 50px;
+        border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 25px;
+        padding-right: 50px;
+        .title-1 {
+          font-family: "FS Playlist Script";
+          font-size: 50px;
+          color: #FFFFFF;
+        }
+
+        .title-2 {
+          font-family: "FS Playlist Caps";
+          font-size: 70px;
+          color: #F7941D;
+          line-height: 60px;
+        }
+      }
+      .content {
+        bottom: 40px;
+        right: 89px;
+        left: 379px;
+        position: absolute;
+        height: 167px;
+        background: rgba(255, 255, 255, 0.15);
+        font-family: "Lato Light";
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 15px;
       }
     }
 
   }
 
-  .content-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 250px;
-    background: url("images/6 Cam nhan ve homestay/Asset 1.png") repeat-x;
-    background-size: cover;
-    width: 100%;
-
-    .title-bar {
+  .section-4 {
+    .content-container {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
       position: absolute;
       z-index: 1;
-      bottom: 40px;
-      left: 50px;
-      border-bottom: 10px solid #F7941D;
-      padding-bottom: 25px;
-      padding-right: 50px;
-      .title-1 {
-        font-family: "FS Playlist Script";
-        font-size: 50px;
-        color: #414042;
-      }
+      .title-bar {
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        left: 50px;
+        border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 25px;
+        padding-right: 50px;
+        .title-1 {
+          font-family: "FS Playlist Script";
+          font-size: 50px;
+          color: #FFFFFF;
+        }
 
-      .title-2 {
-        font-family: "FS Playlist Caps";
-        font-size: 70px;
-        color: #F7941D;
-        line-height: 60px;
+        .title-2 {
+          font-family: "FS Playlist Caps";
+          font-size: 70px;
+          color: #F7941D;
+          line-height: 60px;
+        }
+      }
+      .content {
+        bottom: 40px;
+        right: 89px;
+        left: 379px;
+        position: absolute;
+        height: 167px;
+        background: rgba(255, 255, 255, 0.15);
+        font-family: "Lato Light";
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 15px;
       }
     }
-    .content {
-      bottom: 10px;
-      right: 89px;
-      left: 440px;
+
+  }
+
+  .section-5 {
+
+    .fp-slidesNav.bottom {
+      bottom: 251px;
+    }
+
+    .slide {
+      position: relative;
+      .images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 250px);
+        display: flex;
+        .image-crop {
+          flex: 1;
+          background: red;
+          position: relative;
+          overflow: hidden;
+          object-fit: cover;
+        }
+      }
+
+    }
+
+    .content-container {
       position: absolute;
-      height: 230px;
-      font-family: "Lato Light";
-      color: #FFFFFF;
-      font-size: 20px;
-      line-height: 40px;
-      padding: 15px;
-      border-left: 2px solid #D1D3D4;
-      margin-top: 20px;
+      bottom: 0;
+      left: 0;
+      height: 250px;
+      background: url("images/6 Cam nhan ve homestay/Asset 1.png") repeat-x;
+      background-size: cover;
+      width: 100%;
+
+      .title-bar {
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        left: 50px;
+        border-bottom: 10px solid #F7941D;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        .title-1 {
+          font-family: "FS Playlist Script";
+          font-size: 50px;
+          color: #414042;
+        }
+
+        .title-2 {
+          font-family: "FS Playlist Caps";
+          font-size: 70px;
+          color: #F7941D;
+          line-height: 60px;
+        }
+      }
+      .content {
+        z-index: 50;
+        bottom: 10px;
+        right: 0;
+        left: 440px;
+        position: absolute;
+        height: 230px;
+        font-size: 20px;
+        border-left: 2px solid #D1D3D4;
+        margin-top: 20px;
+        padding: 16px 100px;
+
+        .prev-arrow {
+          position: absolute;
+          top: 100px;
+          cursor: pointer;
+          left: 20px;
+        }
+
+        .next-arrow {
+          position: absolute;
+          top: 100px;
+          right: 20px;
+          cursor: pointer;
+        }
+
+        .author-role {
+          margin-left: 0px;
+          text-align: center;
+          width: 300px;
+          .author {
+            font-family: "Lato Regular";
+            font-size: 25px;
+            color: black;
+            font-weight: 600;
+          }
+
+          .role {
+            font-family: "Lato Thin";
+            font-size: 14px;
+            color: black;
+            font-weight: 600;
+          }
+        }
+
+        .feedback {
+          font-family: "Lato Thin";
+          font-size: 16px;
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .section-6 {
+    .header-container {
+      z-index: 2;
+      position: absolute;
+      top: 70px;
+      width: 100vw;
+      text-align: center;
+      .header {
+        font-family: "FS Playlist Caps";
+        color: black;
+        display: inline-block;
+        font-size: 50px;
+        padding: 20px 40px;
+        border: 3px solid black;
+      }
+    }
+
+    .footer {
+      z-index: 2;
+      width: 100vw;
+      position: absolute;
+      height: 50px;
+      bottom: 100px;
+      left: 0;
+      text-align: center;
 
       .prev-arrow {
         position: absolute;
+        bottom: -5px;
+        left: 200px;
+        cursor: pointer;
       }
 
       .next-arrow {
         position: absolute;
+        bottom: -5px;
+        right: 200px;
+        cursor: pointer;
+      }
+
+      #slider-container {
+        display: inline-block;
+        height: 50px;
+        width: calc(100vw - 600px);
+        .galleryImage {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+
+        .lslide, .clone {
+          opacity: 0.5;
+        }
+
+        .lslide.active {
+          opacity: 1.0;
+        }
       }
     }
   }
 
+  .section-7 {
+    .content {
+      width: 100%;
+      height: calc(100% - 50px);
+      .address-container {
+        background: white;
+        height: 100%;
+        width: 50vw;
+        float: left;
+        position: relative;
+
+        #googlemap {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          width: calc(100% - 30px);
+          height: 350px;
+        }
+
+        .info {
+          position: absolute;
+          top: 380px;
+          left: 15px;
+          right: 15px;
+          .place-name {
+            font-family: "Lato Regular";
+            font-size: 20px;
+            font-weight: 600;
+
+          }
+          .address, .phone, .email {
+            font-family: "Lato Thin";
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+      .booking-container {
+        background: #F7941D;
+        height: 100%;
+        width: 50vw;
+        float: left;
+
+        .title-container {
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+          .title {
+            font-family: "FS Playlist Caps";
+            font-size: 75px;
+            color: black;
+          }
+          .subtitle {
+            font-family: "Lato Light";
+            color: black;
+            font-size: 25px;
+            .place-name {
+              font-family: "FS Playlist Script";
+              color: black;
+              font-size: 25px;
+            }
+          }
+        }
+
+        .options {
+          margin-top: 20px;
+          margin-left: 30px;
+          margin-right: 30px;
+          .option {
+            text-align: center;
+            font-family: "Lato Light";
+            font-size: 20px;
+            margin-top: 20px;
+            input {
+              width: 200px;
+              display: inline-block;
+            }
+          }
+        }
+
+        .buttons {
+          margin-top: 80px;
+
+          .button-container {
+            text-align: center;
+            .button {
+              cursor: pointer;
+              padding: 16px 32px;
+              color: white;
+              font-family: "Lato Regular";
+              font-size: 20px;
+              border-radius: 5px;
+              box-shadow: 5px 5px 21px rgba(0, 0, 0, 0.5);
+              margin-bottom: 40px;
+              &.red {
+                background: #F15A29;
+              }
+
+              &.blue {
+                background: #1C4070;
+              }
+            }
+
+            .note {
+              margin-top: 40px;
+            }
+          }
+
+        }
+      }
+    }
+    .footer {
+      width: 100%;
+      height: 50px;
+      background: #313032;
+      color: white;
+      font-family: "Lato Thin";
+      font-size: 18px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+  }
 }
+

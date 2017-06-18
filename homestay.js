@@ -19,6 +19,52 @@ var contents = {
     ]
 };
 
+var galleryImageSrcs = [
+    "images/7 Gallery/BST (1).JPG",
+    "images/7 Gallery/BST (2).JPG",
+    "images/7 Gallery/BST (3).JPG",
+    "images/7 Gallery/BST (4).JPG",
+    "images/7 Gallery/BST (5).JPG",
+    "images/7 Gallery/BST (6).JPG",
+    "images/7 Gallery/BST (7).JPG",
+    "images/7 Gallery/BST (8).JPG",
+    "images/7 Gallery/BST (9).JPG",
+    "images/7 Gallery/BST (10).JPG",
+    "images/7 Gallery/BST (11).JPG"
+];
+
+var slider;
+var currentFeedbackIndex = 0;
+
+var feedbacks = [
+    {
+        author: "Tâm Phạm",
+        role: "Khách hàng",
+        feedback: "Ấm - cả nghĩa đen và nghĩa bóng là những gì mình nghĩ về Tổ. Mình vẫn nhớ như in ngày lạnh ấy, Tổ đón mình với ánh đèn vàng ấm và hương tinh dầu dịu dàng đến mềm lòng, ấm áp như vừa nhận một cái ôm."
+    },
+    {
+        author: "Phương Anh",
+        role: "Khách hàng",
+        feedback: "Lacaito, mình muốn cảm ơn nhiều, vì tụi mình đã có khoảng thời gian rất tuyệt, bên nhau và cùng làm những điều thật bình thường, nhưng theo một cách riêng. Không gian đẹp và yên tĩnh, 2 ly trà thơm ấm sực và một bộ phim hay, hẹn hò cổ điển nhưng tại sao không?"
+    },
+    {
+        author: "Trang Chang",
+        role: "Khách hàng",
+        feedback: "Không gian thì rõ xinh rồi, nhưng đó không phải tất cả, tớ còn rất ấn tượng với chị chủ nhà nữa. Nói chuyện xíu thôi mà quý chị luôn vì nhẹ nhàng cực kì và đúng kiểu mẫu người sống duy mĩ í."
+    },
+    {
+        author: "Thùy Trang",
+        role: "Khách hàng",
+        feedback: "Lần đầu đến đây đã mê luôn đó, đúng hình mẫu căn phòng tớ luôn thích. Có sofa da nâu mềm nè, có ánh đèn vàng dịu dịu và cả nến. Nơi trú ẩn hoàn hảo!"
+    },
+    {
+        author: "Hương Ly",
+        role: "Khách hàng",
+        feedback: "Mình và mấy nhỏ bạn thân có thói quen hứng lên là rủ nhau \"đi trốn\" và một lần điểm đến của bọn mình chính là nơi này. Ban đầu mình đã hơi bất ngờ vì nó bé hơn mình nghĩ, nhưng mà vẫn xinh ơi là xinh, và đặc biệt là mình thấy gần gũi cực kì, đúng nghĩa như \"về tổ\" ấy."
+    }
+];
+
+
 $(document).ready(function () {
     $('#fullpage').fullpage({
         navigation: true,
@@ -28,6 +74,7 @@ $(document).ready(function () {
         autoScrolling: true,
         controlArrows: false,
         continuousHorizontal: true,
+        paddingTop: '50px',
         onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
 
             switch (index) {
@@ -38,53 +85,62 @@ $(document).ready(function () {
                 case 4: {
                     $(".section-4 .content").text(contents.section4[nextSlideIndex])
                 }
+
+                case 6: {
+                    slider.goToSlide(nextSlideIndex + 1);
+                }
             }
         }
     });
 
-    resizeImages();
-    setAutoScrollingForSlides(5000);
 
+    setAutoScrollingForSlides(5000);
+    loadGallery();
+
+    $('#check-in').datetimepicker();
 });
 
-// Resize all image to fit screen
-var resizeImages = function () {
-
-    // $('.bg').each(function () {
-    //     var theWindow = $(window),
-    //         $bg = $(this),
-    //         aspectRatio = $bg.width() / $bg.height();
-    //
-    //     function resizeBg() {
-    //
-    //         var parentRatio = theWindow.width() / theWindow.height();
-    //
-    //         if ($bg.parents('.image-crop').length > 0) {
-    //             parentRatio = (theWindow.width() / 2) / (theWindow.height() - 250);
-    //         }
-    //
-    //         console.log(parentRatio);
-    //
-    //         if (parentRatio <= aspectRatio) {
-    //             console.log(parentRatio + " " + aspectRatio);
-    //             $bg
-    //                 .removeClass()
-    //                 .addClass('bgheight');
-    //         } else {
-    //             $bg
-    //                 .removeClass()
-    //                 .addClass('bgwidth');
-    //         }
-    //
-    //     }
-    //
-    //     theWindow.resize(resizeBg).trigger("resize");
-    // });
-};
 
 var setAutoScrollingForSlides = function (interval) {
-    setInterval(function () {
-        $.fn.fullpage.moveSlideRight();
-    }, interval)
+    // console.log("!!!!!!!!!!!!!!!!!!!!!!!!1");
+    // setInterval(function () {
+    //     $.fn.fullpage.moveSlideRight();
+    // }, interval)
 };
 
+var loadGallery = function () {
+
+    slider = $("#lightSlider").lightSlider({
+        loop: true,
+        item: 5,
+        slideMargin: 50,
+        pager: false,
+        currentPagerPosition: 'middle'
+    });
+
+    setInterval(function () {
+        nextGalleryImage()
+    }, 5000);
+};
+
+function nextGalleryImage() {
+    $.fn.fullpage.moveSlideRight();
+}
+
+function prevGalleryImage() {
+    $.fn.fullpage.moveSlideLeft();
+}
+
+function nextFeedback() {
+    currentFeedbackIndex = (currentFeedbackIndex + 1) % feedbacks.length;
+    $('#author').text(feedbacks[currentFeedbackIndex].author);
+    $('#role').text(feedbacks[currentFeedbackIndex].role);
+    $('#feedback').text(feedbacks[currentFeedbackIndex].feedback);
+}
+
+function prevFeedback() {
+    currentFeedbackIndex = (currentFeedbackIndex - 1) % feedbacks.length;
+    $('#author').text(feedbacks[currentFeedbackIndex].author);
+    $('#role').text(feedbacks[currentFeedbackIndex].role);
+    $('#feedback').text(feedbacks[currentFeedbackIndex].feedback);
+}
