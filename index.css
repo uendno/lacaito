@@ -117,7 +117,7 @@
     flex-direction: column; }
     .wrapper .content .title {
       color: white;
-      font-family: "Lato Thin";
+      font-family: "Lato Regular";
       font-size: 25px; }
     .wrapper .content .search-box {
       width: 500px; }
