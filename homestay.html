@@ -42,22 +42,11 @@
     <a class="link">BLOG</a>
     <a class="link">HOMESTAY</a>
 </div>
+
 <div id="fullpage">
     <div class="section section-1">
         <div class="slide">
-            <img class="image" src="images/2 Ban dang o LCT/DSC_5109.JPG"/>
-        </div>
-        <div class="slide">
             <img class="image" src="images/2 Ban dang o LCT/head.jpg"/>
-        </div>
-        <div class="slide">
-            <img class="image" src="images/2 Ban dang o LCT/IMG_0889.JPG"/>
-        </div>
-        <div class="slide">
-            <img class="image" src="images/2 Ban dang o LCT/IMG_2556.JPG"/>
-        </div>
-        <div class="slide">
-            <img class="image" src="images/2 Ban dang o LCT/IMG_2558.JPG"/>
         </div>
 
         <div class="title-bar">
@@ -75,9 +64,13 @@
         </div>
 
         <div class="buttons">
-            <img class="button" src="images/book.png"/>
+            <a onclick="$.fn.fullpage.silentMoveTo(7, 0);">
+                <img class="button" src="images/book.png"/>
+            </a>
             <br/>
-            <img class="button" src="images/phone.png"/>
+            <img class="button" src="images/email.png"/>
+            <br/>
+            <img class="button" src="images/insta.png"/>
             <br/>
             <img class="button" src="images/facebook.png"/>
         </div>
@@ -88,10 +81,13 @@
            data-flickr-embed="true"
            data-context="true"
            data-vr="true"
-           href="https://www.flickr.com/photos/151753243@N05/35194497342/in/dateposted-public/" title="R0011099"><img
+           href="https://www.flickr.com/photos/151753243@N05/35194497342/in/dateposted-public/"
+           title="R0011099"><img
                 src="https://c1.staticflickr.com/5/4275/35194497342_10304b959c_k.jpg"
                 alt="R0011099"></a>
-
+        <p class="description"><img src="images/3 Video 360/asset-2.png" class="d-inline left-quote"/> Cùng trải nghiệm
+            không gian
+            Lacaito !<img src="images/3 Video 360/Asset 1.png" class="d-inline right-quote"/></p>
     </div>
     <div class="section section-3">
         <div class="slide">
@@ -158,18 +154,9 @@
         </div>
     </div>
     <div class="section section-5">
-        <div class="slide">
-            <div class="images">
-                <img class="double-image" src="images/6 Cam nhan ve homestay/KH1.JPG"/>
-                <img class="double-image" src="images/6 Cam nhan ve homestay/KH2.JPG"/>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="images">
-                <img class="double-image" src="images/6 Cam nhan ve homestay/KH4.JPG"/>
-                <img class="double-image" src="images/6 Cam nhan ve homestay/KH5.JPG"/>
-            </div>
-        </div>
+        <img class="background" src="images/6 Cam nhan ve homestay/Asset 4.png"/>
+        <img class="lamps" src="images/6 Cam nhan ve homestay/Asset 1.png"/>
+        <img src="images/6 Cam nhan ve homestay/3 anh.png" class="images"/>
         <div class="content-container">
             <div class="title-bar">
                 <div class="title-1">
@@ -183,6 +170,9 @@
                 <img src="images/6 Cam nhan ve homestay/Asset 2.png" class="prev-arrow" onclick="prevFeedback()"/>
                 <img src="images/6 Cam nhan ve homestay/Asset 3.png" class="next-arrow" onclick="nextFeedback()"/>
                 <div class="author-role">
+                    <div class="avatar-container">
+                        <img id="author-avatar" class="avatar" src="images/6 Cam nhan ve homestay/avatar/Tâm.jpg"/>
+                    </div>
                     <p class="author" id="author">Tâm Phạm</p>
                     <p class="role" id="role">Khách hàng</p>
                 </div>
@@ -270,8 +260,8 @@
                     </li>
                 </ul>
             </div>
-            <img src="images/6 Cam nhan ve homestay/Asset 2.png" class="prev-arrow" onclick="prevGalleryImage()"/>
-            <img src="images/6 Cam nhan ve homestay/Asset 3.png" class="next-arrow" onclick="nextGalleryImage()"/>
+            <img src="images/7 Gallery/Asset 1.png" class="prev-arrow" onclick="prevGalleryImage()"/>
+            <img src="images/7 Gallery/Asset 2.png" class="next-arrow" onclick="nextGalleryImage()"/>
         </div>
     </div>
     <div class="section section-7">
@@ -314,13 +304,12 @@
                 </div>
                 <div class="buttons row">
                     <div class="col-md-6 button-container">
-                        <a class="button red">BOOK</a>
-                        <br/>
-                        <p class="note">* Dành cho khách đặt ít hơn 03 ngày</p>
                     </div>
+
                     <div class="col-md-6 button-container">
-                        <a class="button blue">Thương lượng</a>
-                        <p class="note">* Dành cho khách đặt nhiều hơn 03 ngày</p>
+                        <a href="./book.html">
+                            <img src="images/9 Booking_Thankyou/Asset 11.png"/>
+                        </a>
                     </div>
                 </div>
 
@@ -329,6 +318,8 @@
         <div class="footer">&#169; 2017. Bản quyền thuộc về EAGLES CORP. Được phát triển bởi EAGLES</div>
 
     </div>
+
+
 </div>
 
 </body>

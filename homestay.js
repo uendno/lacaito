@@ -41,26 +41,31 @@ var feedbacks = [
     {
         author: "Tâm Phạm",
         role: "Khách hàng",
+        avatar: "images/6 Cam nhan ve homestay/avatar/Tâm.jpg",
         feedback: "Ấm - cả nghĩa đen và nghĩa bóng là những gì mình nghĩ về Tổ. Mình vẫn nhớ như in ngày lạnh ấy, Tổ đón mình với ánh đèn vàng ấm và hương tinh dầu dịu dàng đến mềm lòng, ấm áp như vừa nhận một cái ôm."
     },
     {
         author: "Phương Anh",
         role: "Khách hàng",
+        avatar: "images/6 Cam nhan ve homestay/avatar/Phanh bé.jpg",
         feedback: "Lacaito, mình muốn cảm ơn nhiều, vì tụi mình đã có khoảng thời gian rất tuyệt, bên nhau và cùng làm những điều thật bình thường, nhưng theo một cách riêng. Không gian đẹp và yên tĩnh, 2 ly trà thơm ấm sực và một bộ phim hay, hẹn hò cổ điển nhưng tại sao không?"
     },
     {
         author: "Trang Chang",
         role: "Khách hàng",
+        avatar: "images/6 Cam nhan ve homestay/avatar/Trang chang.jpg",
         feedback: "Không gian thì rõ xinh rồi, nhưng đó không phải tất cả, tớ còn rất ấn tượng với chị chủ nhà nữa. Nói chuyện xíu thôi mà quý chị luôn vì nhẹ nhàng cực kì và đúng kiểu mẫu người sống duy mĩ í."
     },
     {
         author: "Thùy Trang",
         role: "Khách hàng",
+        avatar: "images/6 Cam nhan ve homestay/avatar/Thái.jpg",
         feedback: "Lần đầu đến đây đã mê luôn đó, đúng hình mẫu căn phòng tớ luôn thích. Có sofa da nâu mềm nè, có ánh đèn vàng dịu dịu và cả nến. Nơi trú ẩn hoàn hảo!"
     },
     {
         author: "Hương Ly",
         role: "Khách hàng",
+        avatar: "images/6 Cam nhan ve homestay/avatar/Ly.jpg",
         feedback: "Mình và mấy nhỏ bạn thân có thói quen hứng lên là rủ nhau \"đi trốn\" và một lần điểm đến của bọn mình chính là nơi này. Ban đầu mình đã hơi bất ngờ vì nó bé hơn mình nghĩ, nhưng mà vẫn xinh ơi là xinh, và đặc biệt là mình thấy gần gũi cực kì, đúng nghĩa như \"về tổ\" ấy."
     }
 ];
@@ -75,7 +80,7 @@ $(document).ready(function () {
         autoScrolling: true,
         controlArrows: false,
         continuousHorizontal: true,
-        paddingTop: '50px',
+        // paddingTop: '50px',
         onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
 
             switch (index) {
@@ -111,6 +116,9 @@ $(document).ready(function () {
         }
     });
 
+    setInterval(function () {
+        nextFeedback();
+    }, 3000)
 
     loadGallery();
 });
@@ -139,6 +147,7 @@ function prevGalleryImage() {
 function nextFeedback() {
     currentFeedbackIndex = (currentFeedbackIndex + 1) % feedbacks.length;
     $('#author').text(feedbacks[currentFeedbackIndex].author);
+    $('#author-avatar').attr('src', feedbacks[currentFeedbackIndex].avatar);
     $('#role').text(feedbacks[currentFeedbackIndex].role);
     $('#feedback').text(feedbacks[currentFeedbackIndex].feedback);
 }
