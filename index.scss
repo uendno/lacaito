@@ -41,11 +41,13 @@
   height: 50px;
   z-index: 100;
 
-  background: #FAAF40; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #673E15, #FAAF40); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #673E15, #FAAF40); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #673E15, #FAAF40); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #673E15, #FAAF40); /* Standard syntax */
+  //background: #FAAF40; /* For browsers that do not support gradients */
+  //background: -webkit-linear-gradient(left, #673E15, #FAAF40); /* For Safari 5.1 to 6.0 */
+  //background: -o-linear-gradient(right, #673E15, #FAAF40); /* For Opera 11.1 to 12.0 */
+  //background: -moz-linear-gradient(right, #673E15, #FAAF40); /* For Firefox 3.6 to 15 */
+  //background: linear-gradient(to right, #673E15, #FAAF40); /* Standard syntax */
+
+  background: rgba(65, 64, 66, 0.75);
 
   .logo {
     position: absolute;
@@ -85,8 +87,7 @@
 }
 
 .wrapper {
-  margin-top: 50px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   width: 100%;
   position: relative;
 
@@ -116,6 +117,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     flex-direction: column;
 
     .title {

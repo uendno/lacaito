@@ -33,18 +33,7 @@
   width: 100vw;
   height: 50px;
   z-index: 100;
-  background: #FAAF40;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #673E15, #FAAF40);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #673E15, #FAAF40);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #673E15, #FAAF40);
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right top, from(#673E15), to(#FAAF40));
-  background: -o-linear-gradient(left, #673E15, #FAAF40);
-  background: linear-gradient(to right, #673E15, #FAAF40);
-  /* Standard syntax */ }
+  background: rgba(65, 64, 66, 0.75); }
   .navigation-bar .logo {
     position: absolute;
     top: 5px;
@@ -74,8 +63,7 @@
     cursor: pointer; }
 
 .wrapper {
-  margin-top: 50px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   width: 100%;
   position: relative; }
   .wrapper .background {
@@ -110,6 +98,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

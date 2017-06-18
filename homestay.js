@@ -11,8 +11,8 @@ var contents = {
         "Nếu vô tình là người không biết đến bếp núc, đừng lo, vì quanh Tổ luôn sẵn sàng bún ngan, trà đá, bún cá… đầy đủ những gánh hàng ăn với món ngon đặc biệt nhất của Hà Nội."
     ],
     section4: [
-        "Đêm ở Tổ sẽ thật tuyệt với giai điệu huyền thoại của The Beatles, hương tinh dầu xả dìu dìu và những câu chuyện bất tận trải dài bên ghế sofa.",
         "Cùng nhau đi hết một vòng là cái tổ, rốt cuộc trái tim căn nhà lại nằm ở nơi có tạp dề và bát đũa xinh xinh. Sau bao nhiêu mệt mỏi của cuộc sống, tạm gác mọi thứ qua một bên và thưởng thức tình yêu sau căn bếp thôi....",
+        "Đêm ở Tổ sẽ thật tuyệt với giai điệu huyền thoại của The Beatles, hương tinh dầu xả dìu dìu và những câu chuyện bất tận trải dài bên ghế sofa.",
         "Những ngày Hà Nội đang thu, chẳng đâu hút mình hơn ngoài việc rúc mình trong tổ, ngồi vu vơ bên khung cửa nhỏ, thêm chút bánh trà, sống những ngày thật thơ.",
         "Là con gái, soi gương không những phải thấy mình thật xinh mà đến gương cũng phải cực kì đẹp, cuộc sống xung quang chẳng có gì để chê thì mới đủ bộ nè. Với Tổ, cảm giác dễ chịu luôn là điều có thể tìm thấy ở khắp mọi nơi trong không gian nhỏ xinh này.",
         "An yên ở Tổ là được cùng nhau thức giấc, tự tay chuẩn bị bữa sáng tuyệt vời khởi đầu ngày mới tràn năng lượng. "
@@ -85,15 +85,34 @@ $(document).ready(function () {
 
             switch (index) {
                 case 3: {
-                    $(".section-3 .content").text(contents.section3[nextSlideIndex])
+                    var text = $(".section-3 .content p");
+                    text.animate({
+                        opacity: 0
+                    }, 400, function () {
+                        text.text(contents.section3[nextSlideIndex])
+                        text.animate({
+                            opacity: 1
+                        }, 400)
+                    });
+                    break;
                 }
 
                 case 4: {
-                    $(".section-4 .content").text(contents.section4[nextSlideIndex])
+                    var text = $(".section-4 .content p");
+                    text.animate({
+                        opacity: 0
+                    }, 400, function () {
+                        text.text(contents.section4[nextSlideIndex])
+                        text.animate({
+                            opacity: 1
+                        }, 400)
+                    });
+                    break;
                 }
 
                 case 6: {
                     slider.goToSlide(nextSlideIndex + 1);
+                    break;
                 }
             }
         },
@@ -103,6 +122,14 @@ $(document).ready(function () {
                     if (galleryInterval) {
                         clearInterval(galleryInterval);
                     }
+                    break;
+                }
+
+                case 1: {
+                    $('#title-bar').animate({
+                        left: '-600px'
+                    }, 500)
+                    break;
                 }
             }
 
@@ -111,7 +138,21 @@ $(document).ready(function () {
                     galleryInterval = setInterval(function () {
                         nextGalleryImage()
                     }, 3000)
+                    break;
                 }
+
+                case 1: {
+                    $('#title-bar').animate({
+                        left: '0'
+                    }, 500)
+                    break;
+                }
+            }
+
+            if (nextIndex === 7) {
+                $("#action-buttons").hide()
+            } else {
+                $("#action-buttons").show()
             }
         }
     });
@@ -121,6 +162,13 @@ $(document).ready(function () {
     }, 3000)
 
     loadGallery();
+
+    $('#title-bar').animate({
+        left: '0px'
+    }, 500)
+
+    animateLamps();
+
 });
 
 var loadGallery = function () {
@@ -157,4 +205,20 @@ function prevFeedback() {
     $('#author').text(feedbacks[currentFeedbackIndex].author);
     $('#role').text(feedbacks[currentFeedbackIndex].role);
     $('#feedback').text(feedbacks[currentFeedbackIndex].feedback);
+}
+
+function animateLamps() {
+    var lamps = $('#lamps');
+
+    var animate = function () {
+        lamps.animate({
+            top: '-20px'
+        }, 700, function () {
+            lamps.animate({
+                top: 0
+            }, 700, animate)
+        })
+    };
+
+    animate();
 }

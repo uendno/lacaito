@@ -32,7 +32,7 @@
 <body>
 
 <div class="navigation-bar">
-    <img class="logo" src="images/logo.png"/>
+    <a href="index.html"><img class="logo" src="images/logo.png"/></a>
     <div class="search-box">
         <input type="text" class="form-control" placeholder="Search for...">
         <i class="icon-magnifier"></i>
@@ -43,13 +43,27 @@
     <a class="link">HOMESTAY</a>
 </div>
 
+
+<div class="buttons" id="action-buttons">
+    <a onclick="$.fn.fullpage.silentMoveTo(7, 0);">
+        <img class="button" src="images/book.png"/>
+    </a>
+    <br/>
+    <a href="https://www.youtube.com/watch?v=OLnZphLHWq0&feature=youtu.be"><img class="button"
+                                                                                src="images/Youtube.png"/></a>
+    <br/>
+    <a href="https://www.instagram.com/lacaito_homestay/"><img class="button" src="images/insta.png"/></a>
+    <br/>
+    <a href=""><img class="button" src="images/facebook.png"/></a>
+</div>
+
 <div id="fullpage">
     <div class="section section-1">
         <div class="slide">
             <img class="image" src="images/2 Ban dang o LCT/head.jpg"/>
         </div>
 
-        <div class="title-bar">
+        <div id="title-bar">
             <div class="subtitle">
                 BẠN ĐANG Ở
             </div>
@@ -61,18 +75,6 @@
             </div>
         </div>
         <div class="title-bar-background">
-        </div>
-
-        <div class="buttons">
-            <a onclick="$.fn.fullpage.silentMoveTo(7, 0);">
-                <img class="button" src="images/book.png"/>
-            </a>
-            <br/>
-            <img class="button" src="images/email.png"/>
-            <br/>
-            <img class="button" src="images/insta.png"/>
-            <br/>
-            <img class="button" src="images/facebook.png"/>
         </div>
     </div>
     <div class="section section-2">
@@ -114,19 +116,20 @@
                 <div class="title-2">
                     Bên ngoài
                 </div>
+                <img class="dash" src="images/4 Khong gian ben ngoai/Gach trang.png"/>
             </div>
             <div class="content">
-                Giữa những ngày nắng vàng hanh khô từng phiến lá của Hà Nội, góc nhỏ ngõ Dã Tượng vẫn trong trẻo đến lạ.
-                Bình yên và tươi mát, Lacaito - Là Cái Tổ là chốn ưa thích cho những người xê dịch ghé qua.
+                <p>Giữa những ngày nắng vàng hanh khô từng phiến lá của Hà Nội, góc nhỏ ngõ Dã Tượng vẫn trong trẻo đến
+                    lạ. Bình yên và tươi mát, Lacaito - Là Cái Tổ là chốn ưa thích cho những người xê dịch ghé qua.</p>
             </div>
         </div>
     </div>
     <div class="section section-4">
         <div class="slide">
-            <img class="image" src="images/5 Khong gian homestay/1-lady night.JPG"/>
+            <img class="image" src="images/5 Khong gian homestay/2-Bep.JPG"/>
         </div>
         <div class="slide">
-            <img class="image" src="images/5 Khong gian homestay/2-Bep.JPG"/>
+            <img class="image" src="images/5 Khong gian homestay/1-lady night.JPG"/>
         </div>
         <div class="slide">
             <img class="image" src="images/5 Khong gian homestay/3-giuong.JPG"/>
@@ -146,16 +149,20 @@
                 <div class="title-2">
                     Bên trong
                 </div>
+                <img class="dash" src="images/4 Khong gian ben ngoai/Gach trang.png"/>
             </div>
             <div class="content">
-                Đêm ở Tổ sẽ thật tuyệt với giai điệu huyền thoại của The Beatles, hương tinh dầu xả dìu dìu và những câu
-                chuyện bất tận trải dài bên ghế sofa
+                <p>Cùng nhau đi hết một vòng là cái tổ, rốt cuộc trái tim căn nhà lại nằm ở nơi có tạp dề và bát đũa
+                    xinh
+                    xinh. Sau bao nhiêu mệt mỏi của cuộc sống, tạm gác mọi thứ qua một bên và thưởng thức tình yêu sau
+                    căn
+                    bếp thôi....</p>
             </div>
         </div>
     </div>
     <div class="section section-5">
         <img class="background" src="images/6 Cam nhan ve homestay/Asset 4.png"/>
-        <img class="lamps" src="images/6 Cam nhan ve homestay/Asset 1.png"/>
+        <img id="lamps" class="lamps" src="images/6 Cam nhan ve homestay/Asset 1.png"/>
         <img src="images/6 Cam nhan ve homestay/3 anh.png" class="images"/>
         <div class="content-container">
             <div class="title-bar">
@@ -165,6 +172,7 @@
                 <div class="title-2">
                     Về Homestay
                 </div>
+                <img class="dash" src="images/6 Cam nhan ve homestay/Gach cam.png"/>
             </div>
             <div class="content">
                 <img src="images/6 Cam nhan ve homestay/Asset 2.png" class="prev-arrow" onclick="prevFeedback()"/>
@@ -267,11 +275,9 @@
     <div class="section section-7">
         <div class="content">
             <div class="address-container">
-                <iframe id="googlemap"
-                        frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPc8Yui0ChCFIDqnmUQS5DUYtA-KuCxfA
-    &q=Lacaito+-+The May" allowfullscreen>
-                </iframe>
+                <div class="map">
+                    <img class="map-image" src="images/8 Map/map.jpg"/>
+                </div>
                 <div class="info">
                     <p class="place-name">Lacaito by D.A.N.G</p>
                     <p class="address">Địa chỉ: Số 02, Ngõ Dã Tượng, Dã Tượng, Hai Bà Trưng, Hà Nội</p>
@@ -284,7 +290,6 @@
                     <div class="title">Booking</div>
                     <div class="subtitle">Đặt phòng tại <span class="place-name">Lacatio</span></div>
                 </div>
-
                 <div class="options row">
                     <div class="col-md-6 option">
                         CHECKIN
@@ -302,7 +307,7 @@
                         <input class="form-control" type="number">
                     </div>
                 </div>
-                <div class="buttons row">
+                <div class="buttons-group row">
                     <div class="col-md-6 button-container">
                     </div>
 

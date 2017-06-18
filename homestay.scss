@@ -124,6 +124,24 @@
   }
 }
 
+.buttons {
+  top: 50px;
+  bottom: 0;
+  position: fixed;
+  height: 400px;
+  width: 80px;
+  text-align: center;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .button {
+    cursor: pointer;
+  }
+}
+
 #fullpage {
 
   .section {
@@ -144,30 +162,12 @@
 
   .section-1 {
 
-    .buttons {
-      top: 50px;
-      bottom: 0;
-      position: absolute;
-      height: 400px;
-      width: 200px;
-      text-align: center;
-      z-index: 50;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      .button {
-        cursor: pointer;
-      }
-    }
-
-    .title-bar {
+    #title-bar {
       position: absolute;
       // border: 3px solid white;
       background: rgba(255, 255, 255, 0.75);
       bottom: 40px;
-      left: 0;
+      left: -600px;
       height: 200px;
       width: 600px;
       z-index: 2;
@@ -274,7 +274,7 @@
         z-index: 1;
         bottom: 40px;
         left: 50px;
-        border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+        //border-bottom: 10px solid rgba(255, 255, 255, 0.5);
         padding-bottom: 25px;
         padding-right: 50px;
         .title-1 {
@@ -288,6 +288,11 @@
           font-size: 70px;
           color: #F7941D;
           line-height: 60px;
+        }
+        .dash {
+          position: absolute;
+          bottom: 0;
+          left: 0;
         }
       }
       .content {
@@ -321,7 +326,6 @@
         z-index: 1;
         bottom: 40px;
         left: 50px;
-        border-bottom: 10px solid rgba(255, 255, 255, 0.5);
         padding-bottom: 25px;
         padding-right: 50px;
         .title-1 {
@@ -335,6 +339,12 @@
           font-size: 70px;
           color: #F7941D;
           line-height: 60px;
+        }
+
+        .dash {
+          position: absolute;
+          bottom: 0;
+          left: 0;
         }
       }
       .content {
@@ -356,7 +366,7 @@
   }
 
   .section-5 {
-
+    overflow: hidden;
     .background {
       height: 100%;
       width: 100%;
@@ -387,10 +397,11 @@
       width: 100%;
 
       .title-bar {
-        border-bottom: 10px solid #F7941D;
+        position: relative;
         padding-bottom: 25px;
         padding-right: 50px;
         width: 350px;
+        margin-left: 30px;
         .title-1 {
           font-family: "FS Playlist Script";
           font-size: 50px;
@@ -402,6 +413,12 @@
           font-size: 70px;
           color: #F7941D;
           line-height: 60px;
+        }
+
+        .dash {
+          position: absolute;
+          bottom: 0;
+          left: 0;
         }
       }
       .content {
@@ -544,12 +561,18 @@
         float: left;
         position: relative;
 
-        #googlemap {
+        .map {
           position: absolute;
           top: 65px;
           left: 15px;
           width: calc(100% - 30px);
           height: 350px;
+
+          .map-image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
         }
 
         .info {
@@ -613,7 +636,7 @@
           }
         }
 
-        .buttons {
+        .buttons-group {
           margin-top: 40px;
 
           .button-container {
@@ -627,17 +650,6 @@
               border-radius: 5px;
               box-shadow: 5px 5px 21px rgba(0, 0, 0, 0.5);
               margin-bottom: 40px;
-              &.red {
-                background: #F15A29;
-              }
-
-              &.blue {
-                background: #1C4070;
-              }
-            }
-
-            .note {
-              margin-top: 40px;
             }
           }
 
