@@ -35,6 +35,7 @@ var galleryImageSrcs = [
 
 var slider;
 var currentFeedbackIndex = 0;
+var galleryInterval;
 
 var feedbacks = [
     {
@@ -90,23 +91,29 @@ $(document).ready(function () {
                     slider.goToSlide(nextSlideIndex + 1);
                 }
             }
+        },
+        onLeave: function (index, nextIndex, direction) {
+            switch (index) {
+                case 6: {
+                    if (galleryInterval) {
+                        clearInterval(galleryInterval);
+                    }
+                }
+            }
+
+            switch (nextIndex) {
+                case 6: {
+                    galleryInterval = setInterval(function () {
+                        nextGalleryImage()
+                    }, 3000)
+                }
+            }
         }
     });
 
 
-    setAutoScrollingForSlides(5000);
     loadGallery();
-
-    $('#check-in').datetimepicker();
 });
-
-
-var setAutoScrollingForSlides = function (interval) {
-    // console.log("!!!!!!!!!!!!!!!!!!!!!!!!1");
-    // setInterval(function () {
-    //     $.fn.fullpage.moveSlideRight();
-    // }, interval)
-};
 
 var loadGallery = function () {
 
@@ -118,9 +125,7 @@ var loadGallery = function () {
         currentPagerPosition: 'middle'
     });
 
-    setInterval(function () {
-        nextGalleryImage()
-    }, 5000);
+
 };
 
 function nextGalleryImage() {

@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14ed65e-082b-47cf-97d3-a4b4940507c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/lato-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/lato-thin.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3 Video 360/Asset 7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/lightslider.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/lightslider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.css" afterPath="$PROJECT_DIR$/homestay.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.css.map" afterPath="$PROJECT_DIR$/homestay.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.html" afterPath="$PROJECT_DIR$/homestay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.js" afterPath="$PROJECT_DIR$/homestay.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homestay.scss" afterPath="$PROJECT_DIR$/homestay.scss" />
@@ -37,16 +29,14 @@
       <file leaf-file-name="homestay.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homestay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="196" column="10" lean-forward="true" selection-start-line="196" selection-start-column="10" selection-end-line="196" selection-end-column="10" />
+            <state relative-caret-position="284">
+              <caret line="286" column="99" lean-forward="false" selection-start-line="286" selection-start-column="39" selection-end-line="286" selection-end-column="99" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#12;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -54,31 +44,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moment.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/moment.min.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="6" column="16099" lean-forward="true" selection-start-line="6" selection-start-column="16099" selection-end-line="6" selection-end-column="16099" />
+            <state relative-caret-position="176">
+              <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-datetimepicker.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.css">
+      <file leaf-file-name="IMG_7599.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/4 Khong gian ben ngoai/IMG_7599.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DSC_5109.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/2 Ban dang o LCT/DSC_5109.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="359">
+              <caret line="163" column="25" lean-forward="false" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
+              <folding>
+                <element signature="e#623#1725#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-datetimepicker.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4301">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -87,30 +93,20 @@
       <file leaf-file-name="homestay.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homestay.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="379" column="20" lean-forward="false" selection-start-line="379" selection-start-column="20" selection-end-line="379" selection-end-column="20" />
+            <state relative-caret-position="342">
+              <caret line="613" column="24" lean-forward="false" selection-start-line="613" selection-start-column="24" selection-end-line="613" selection-end-column="24" />
               <folding>
                 <element signature="e#623#1725#0" expanded="false" />
                 <element signature="e#1745#2072#0" expanded="false" />
-                <element signature="e#2095#2214#0" expanded="false" />
                 <element signature="e#2281#2344#0" expanded="false" />
                 <element signature="e#2362#2439#0" expanded="false" />
                 <element signature="e#3793#4033#0" expanded="false" />
-                <element signature="e#4048#5068#0" expanded="false" />
                 <element signature="e#5083#6071#0" expanded="false" />
                 <element signature="e#8398#9517#0" expanded="false" />
-                <element signature="e#9532#12266#0" expanded="false" />
                 <element signature="e#10992#11351#0" expanded="false" />
                 <element signature="e#11370#12035#0" expanded="false" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/book.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -128,25 +124,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homestay.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homestay.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homestay.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="122" column="12" lean-forward="false" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#3955#4852#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prepros-6.config" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prepros-6.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +141,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -175,6 +160,11 @@
       <find>prev-arrow</find>
       <find>feedback</find>
       <find>sect</find>
+      <find>title-bar</find>
+      <find>object</find>
+      <find>footer</find>
+      <find>address</find>
+      <find>overlay</find>
     </findStrings>
     <replaceStrings>
       <replace>image</replace>
@@ -189,9 +179,13 @@
         <option value="$PROJECT_DIR$/homestay.css.map" />
         <option value="$PROJECT_DIR$/homestay.css" />
         <option value="$PROJECT_DIR$/lib/moment.min.js" />
-        <option value="$PROJECT_DIR$/homestay.html" />
-        <option value="$PROJECT_DIR$/homestay.scss" />
         <option value="$PROJECT_DIR$/homestay.js" />
+        <option value="$PROJECT_DIR$/lib/index.html" />
+        <option value="$PROJECT_DIR$/homestay.scss" />
+        <option value="$PROJECT_DIR$/homestay.html" />
+        <option value="$PROJECT_DIR$/index.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -223,6 +217,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,10 +245,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lacaito" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lacaito" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2 Ban dang o LCT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,6 +276,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\uendn\Source code\html\lacaito" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\uendn\Source code\html\lacaito\images" />
       <recent name="C:\Users\uendn\Source code\html\lacaito\lib" />
@@ -284,8 +299,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.homestay.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="homestay.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/lacaito/homestay.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/lacaito/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -354,12 +372,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.homestay.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.homestay.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.homestay.html" />
       </list>
     </recent_temporary>
   </component>
@@ -377,12 +397,13 @@
       <option name="presentableId" value="Default" />
       <updated>1497627177618</updated>
       <workItem from="1497627179112" duration="2803000" />
-      <workItem from="1497665294201" duration="43546000" />
+      <workItem from="1497665294201" duration="44985000" />
+      <workItem from="1497760024096" duration="2120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46349000" />
+    <option name="totallyTimeSpent" value="49908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -391,7 +412,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25818452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -403,6 +423,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -413,7 +434,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -427,54 +450,20 @@
             <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#12;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/Không gian bên trong/Cửa sổ.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7612.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7613.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7617.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7618.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH1.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH2.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH4.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Không gian bên trong/Cửa sổ.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7612.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7613.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7617.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7618.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH1.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH2.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH4.JPG" />
     <entry file="file://$PROJECT_DIR$/homestay.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -491,31 +480,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH1.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH2.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH4.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Không gian bên trong/Cửa sổ.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH1.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH2.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Cảm nhận KH - Bé/KH4.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Không gian bên trong/Cửa sổ.JPG" />
     <entry file="file://$PROJECT_DIR$/homestay.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -535,46 +507,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/Section-3/kiến trúc.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Section-3/kiến trúc2.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Section-3/ngõ.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/Section-3/người dân.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7612.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7613.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7617.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_7618.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Section-3/kiến trúc.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Section-3/kiến trúc2.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Section-3/ngõ.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/Section-3/người dân.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7612.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7613.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7617.JPG" />
+    <entry file="file://$PROJECT_DIR$/images/IMG_7618.JPG" />
     <entry file="file://$PROJECT_DIR$/lib/jquery.fullpage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -645,26 +585,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4301">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.css" />
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap-datetimepicker.min.js" />
     <entry file="file://$PROJECT_DIR$/lib/moment.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="6" column="16099" lean-forward="true" selection-start-line="6" selection-start-column="16099" selection-end-line="6" selection-end-column="16099" />
+        <state relative-caret-position="34">
+          <caret line="6" column="16099" lean-forward="false" selection-start-line="6" selection-start-column="16099" selection-end-line="6" selection-end-column="16099" />
           <folding />
         </state>
       </provider>
@@ -684,18 +610,36 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/2 Ban dang o LCT/DSC_5109.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/4 Khong gian ben ngoai/IMG_7599.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homestay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homestay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="196" column="10" lean-forward="true" selection-start-line="196" selection-start-column="10" selection-end-line="196" selection-end-column="10" />
+        <state relative-caret-position="284">
+          <caret line="286" column="99" lean-forward="false" selection-start-line="286" selection-start-column="39" selection-end-line="286" selection-end-column="99" />
           <folding>
             <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#12;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -704,33 +648,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homestay.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="379" column="20" lean-forward="false" selection-start-line="379" selection-start-column="20" selection-end-line="379" selection-end-column="20" />
+        <state relative-caret-position="342">
+          <caret line="613" column="24" lean-forward="false" selection-start-line="613" selection-start-column="24" selection-end-line="613" selection-end-column="24" />
           <folding>
             <element signature="e#623#1725#0" expanded="false" />
             <element signature="e#1745#2072#0" expanded="false" />
-            <element signature="e#2095#2214#0" expanded="false" />
             <element signature="e#2281#2344#0" expanded="false" />
             <element signature="e#2362#2439#0" expanded="false" />
             <element signature="e#3793#4033#0" expanded="false" />
-            <element signature="e#4048#5068#0" expanded="false" />
             <element signature="e#5083#6071#0" expanded="false" />
             <element signature="e#8398#9517#0" expanded="false" />
-            <element signature="e#9532#12266#0" expanded="false" />
             <element signature="e#10992#11351#0" expanded="false" />
             <element signature="e#11370#12035#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homestay.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="122" column="12" lean-forward="false" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+        <state relative-caret-position="176">
+          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="163" column="25" lean-forward="false" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#3955#4852#0" expanded="false" />
+            <element signature="e#623#1725#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
